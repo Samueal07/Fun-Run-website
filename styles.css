@@ -1,0 +1,184 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+h2{
+    font-family: 'Press Start 2P', cursive;
+    color: #270082;
+    text-align: center; 
+}
+h3{
+    font-family: 'Merriweather',sans-serif;
+    font-size: 1rem;
+    color:#270082;
+}
+p{
+    font-family:'Merriweather',sans-serif;
+    font-size: 0.75em;
+}
+
+/* .logo-head h1{
+    display: inline-block;
+    padding:
+
+} */
+/* Heading Part */
+.heading{
+    width:95%;
+    display: flex;
+    justify-content: space-between; 
+     
+}
+
+.heading h1{
+    font-size: 2rem;
+    font-family: 'Press Start 2P', cursive;
+    color: #270082;
+    margin-left: 1em;
+    cursor: pointer;
+                                                
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    margin:1em;}
+
+nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    /* add white color later */
+}
+nav a:hover,nav a:focus{
+    color:#42C2FF;
+}
+@media(max-width:675px){
+    .heading{
+        flex-direction: column;
+        text-align: center;   
+    }
+    .heading h1{
+        margin-bottom: 0;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li{
+        margin:0.5em;
+    }
+
+}
+/* Download Part */
+.download{
+    /* #85F4FF */
+    background-color:#84DFFF ;
+    display:flex;
+    justify-content: space-evenly;
+}
+.download-area{
+    width:70%;
+    padding: 3em 0;
+    text-align: center;
+    
+    
+}
+.download-area h1{
+    font-size: 2rem;
+    margin-bottom: 1em;
+    
+
+    font-family: 'Press Start 2P', cursive;
+    color:royalblue;
+}
+.download-area h2{
+    font-size: 1.25rem;
+    font-family: 'Merriweather',sans-serif;
+    font-weight: bold;
+    color: #3D2C8D;
+    margin-bottom: 1em;
+}
+.button-download{
+    min-width: fit-content;
+    max-width: 150px;
+    border-radius: 15%;
+    border-color:0,25px solid royalblue;
+    background-color:#42C2FF ;    
+}
+.button-download:hover{
+    cursor: pointer;
+    background-color: #270082;   
+}
+.button-download h3:hover{
+    color: white;
+}
+/* gameplay screenshots carousel */
+.gameplay{
+    display: flex;
+    justify-content: center;
+    
+}
+.screenshots{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    object-fit: cover;
+}
+.screenshots img{
+    width:30%;
+    margin:1em ;
+}
+@media (max-width:1000px){
+    .screenshots{
+        flex-direction: column;
+        align-items: center;
+    }
+    .screenshots img{
+        width: 70%;
+    }
+}
+/* Contributions */
+.contributions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#84DFFF ;
+    
+
+}
+.one{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.second{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+@media (max-width:700px){
+    
+    .contributions h2{
+        margin-bottom:0.5em auto;
+    }
+    .one,.second{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+/* footer */
+.footer{
+    text-align: center;
+    
+}
+.footer p{
+    color: #270082;
+    font-weight: bold;
+}
